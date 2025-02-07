@@ -8,7 +8,7 @@
   </head>
 <body>
   <button onclick="
-    console.log(`Cart Quantity:${cartQuantity}`);
+    console.log(`Cart Quantity: ${cartQuantity}`);
   "> Show Quantity </button>
 
   <button onclick="
@@ -25,6 +25,16 @@
     cartQuantity = cartQuantity + 3;
     console.log(`Cart Quantity: ${cartQuantity}`);
   "> +3 </button>
+
+  <button onclick="
+    cartQuantity = cartQuantity - 1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+  "> Remove from cart </button>
+
+  <button onclick="
+      cartQuantity -= 2;
+      console.log(`Cart quantity: ${cartQuantity}`);
+  "> -2 </button>
 
   <button onclick="
     cartQuantity = 0;
